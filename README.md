@@ -8,4 +8,4 @@ It uses Redux Toolkit to manage the global cart state efficiently.
 <br/>
 Author- Anjali Thakur
 <br/>
-Deployed Link- https://benevolent-lokum-c8f2c2.netlify.app/
+Deployed Link- https://visionary-liger-c7ea32.netlify.app/
