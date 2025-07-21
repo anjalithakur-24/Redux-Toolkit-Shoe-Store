@@ -3,6 +3,7 @@ import './Cart.css';
 import {Link} from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
 import { addToCart } from '../../Features/CartSlice';
+import { decrementQuantity } from '../../Features/CartSlice';
 import { removeFromCart } from '../../Features/CartSlice';
 
 function Cart(){
@@ -28,9 +29,9 @@ function Cart(){
                                 <p>₹{item.price}</p>
                             </p>
                             <div className='but'>
-                                <button onClick={()=>dispatch(addToCart(shoe))}>+</button>
+                                <button onClick={()=>dispatch(addToCart(item))}>+</button>
                                 {item.quantity}
-                                <button onClick={() => dispatch(removeFromCart(item.id))}>-</button>
+                                <button onClick={() => dispatch(decrementQuantity(item.id))}>-</button>
                             </div>
                         </div>
                     </li>
